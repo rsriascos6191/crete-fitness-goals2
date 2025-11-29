@@ -1,7 +1,6 @@
 import Navbar from '@/components/Navbar';
-import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Flame, Trophy, Dumbbell, Plus, Calendar, TrendingUp } from 'lucide-react';
+import { Flame, Trophy, Dumbbell, TrendingUp } from 'lucide-react';
 
 const Dashboard = () => {
 
@@ -81,33 +80,6 @@ const Dashboard = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Quick Actions */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Dumbbell className="h-5 w-5 text-primary" />
-                Inicio rápido
-              </CardTitle>
-              <CardDescription>
-                Comienza un entrenamiento ahora
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              <Button className="w-full justify-start" size="lg">
-                <Plus className="mr-2 h-5 w-5" />
-                Nuevo entrenamiento
-              </Button>
-              <Button variant="outline" className="w-full justify-start" size="lg">
-                <Calendar className="mr-2 h-5 w-5" />
-                Ver biblioteca de entrenamientos
-              </Button>
-              <Button variant="outline" className="w-full justify-start" size="lg">
-                <Plus className="mr-2 h-5 w-5" />
-                Crear rutina personalizada
-              </Button>
-            </CardContent>
-          </Card>
-
           {/* Recent Achievements */}
           <Card>
             <CardHeader>
@@ -123,26 +95,6 @@ const Dashboard = () => {
               <div className="text-center py-8 text-muted-foreground">
                 <Trophy className="h-12 w-12 mx-auto mb-3 opacity-50" />
                 <p>Completa tu primer entrenamiento para desbloquear logros</p>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Recent Workouts */}
-          <Card className="md:col-span-2">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Calendar className="h-5 w-5 text-primary" />
-                Historial reciente
-              </CardTitle>
-              <CardDescription>
-                Tus últimos entrenamientos completados
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="text-center py-12 text-muted-foreground">
-                <Dumbbell className="h-16 w-16 mx-auto mb-4 opacity-50" />
-                <p className="text-lg font-semibold mb-2">¡Comienza tu primer entrenamiento!</p>
-                <p>Tu historial aparecerá aquí una vez completes tu primera sesión</p>
               </div>
             </CardContent>
           </Card>
