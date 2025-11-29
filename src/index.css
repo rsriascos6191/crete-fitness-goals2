@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base colors - Crete fitness theme */
+    --background: 0 0% 100%; /* White */
+    --foreground: 0 0% 0%; /* Black */
+
+    /* Card colors */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    /* Popover colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    /* Primary - Dark navy blue */
+    --primary: 210 65% 11%; /* #0A1A2F */
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Lighter navy for hover states */
+    --secondary: 210 60% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted backgrounds */
+    --muted: 210 20% 95%;
+    --muted-foreground: 210 10% 40%;
+
+    /* Accent - Energetic blue */
+    --accent: 210 80% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs */
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 210 65% 11%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210, 65%, 11%), hsl(210, 60%, 20%));
+    --gradient-accent: linear-gradient(135deg, hsl(210, 80%, 50%), hsl(210, 70%, 60%));
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsl(210 65% 11% / 0.08);
+    --shadow-md: 0 4px 16px hsl(210 65% 11% / 0.12);
+    --shadow-lg: 0 8px 24px hsl(210 65% 11% / 0.16);
+    
+    /* Transitions */
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 210 65% 11%;
+    --foreground: 0 0% 100%;
+
+    --card: 210 60% 15%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 210 60% 15%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 210 65% 11%;
+
+    --secondary: 210 60% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 50% 20%;
+    --muted-foreground: 210 20% 70%;
+
+    --accent: 210 80% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 50% 25%;
+    --input: 210 50% 25%;
+    --ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
