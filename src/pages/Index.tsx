@@ -36,7 +36,7 @@ const Index = () => {
               <div className="flex gap-4 flex-wrap">
                 <Button 
                   size="lg" 
-                  onClick={() => navigate('/dashboard')}
+                  onClick={() => navigate('/exercises')}
                   className="bg-primary hover:bg-secondary text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all"
                 >
                   Comenzar ahora
@@ -146,7 +146,7 @@ const Index = () => {
             </p>
             <Button 
               size="lg"
-              onClick={() => navigate('/dashboard')}
+              onClick={() => navigate('/exercises')}
               className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 shadow-lg"
             >
               Ir al Dashboard
